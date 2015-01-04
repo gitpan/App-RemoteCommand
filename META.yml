@@ -1,0 +1,43 @@
+---
+abstract: 'simple remote command launcher via ssh'
+author:
+  - 'Shoichi Kaji <skaji@cpan.org>'
+build_requires:
+  Test::More: '0.98'
+configure_requires:
+  Module::Build: '0.38'
+dynamic_config: 0
+generated_by: 'Minilla/v2.3.0, CPAN::Meta::Converter version 2.143240'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: App-RemoteCommand
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+    - builder
+provides:
+  App::RemoteCommand:
+    file: lib/App/RemoteCommand.pm
+    version: '0.01'
+requires:
+  IO::Prompt: '0'
+  IO::Pty: '0'
+  List::MoreUtils: '0'
+  Net::OpenSSH: '0'
+  Parallel::ForkManager: '0'
+  String::Glob::Permute: '0'
+  perl: '5.008005'
+resources:
+  bugtracker: https://github.com/shoichikaji/App-RemoteCommand/issues
+  homepage: https://github.com/shoichikaji/App-RemoteCommand
+  repository: git://github.com/shoichikaji/App-RemoteCommand.git
+version: '0.01'
+x_authority: cpan:SKAJI
